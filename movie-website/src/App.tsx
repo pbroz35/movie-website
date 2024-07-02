@@ -1,12 +1,18 @@
 import { useState } from "react";
 import "./App.css";
+import NavBar from "./assets/NavBar";
+
 
 function App() {
+
+  //typescript code here
+
+  
+
   return (
     <>
-    
-      <h1>title</h1>
-      <h2>subtitle</h2>
+
+    <NavBar></NavBar>
 
     </>
   );
