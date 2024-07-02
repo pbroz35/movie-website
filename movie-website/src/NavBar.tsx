@@ -5,18 +5,18 @@ const NavBar = () => {
         <a href="/" className="site-title">Best Movie Website</a>
         <ul>
             <li>
-                <button >Top-Movies</button>
+                <button className="button">Top-Movies</button>
              </li> 
 
 
              <li>
 
-                <button>Search</button>
+                <button className="button">Search</button>
 
             </li>
         </ul>
     </nav>
-    
+
     )
 }
 

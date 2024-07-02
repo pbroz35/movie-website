@@ -11,10 +11,6 @@ function App() {
     {/* Navigation bar */}
       <NavBar></NavBar>
 
-      
-
-
-
     </>
   );
 }
