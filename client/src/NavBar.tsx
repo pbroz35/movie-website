@@ -1,13 +1,30 @@
 
 
-const NavBar = () => {
+const NavBar = ({data, setData}) => {
+    
+    const fetchMovies = () =>{
+
+    console.log("Getting top movies");
+    
+    const apiServer = "http://localhost:3500";
+    fetch(`${apiServer}/get-top-movies`).then((res) => res.json()).then((data) => {
+      console.log("Value", data);
+
+    });
+    
+        
+
+
+
+    }
+    
     return (
       
         <nav className="nav">
         <a href="/" className="site-title">Best Movie Website</a>
         <ul>
             <li>
-                <button className="button">Top-Movies</button>
+                <button className="button" onClick={()=>fetchMovies()}>Top-Movies</button>
              </li> 
 
 

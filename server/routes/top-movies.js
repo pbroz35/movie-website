@@ -1,12 +1,15 @@
+
 const express = require("express");
 const router = express.Router();
 const path = require("path");
+const cors = require('cors');
+
 
 router.get("/", async (req, res)=>{
-    
+    res.header('Access-Control-Allow-Origin', '*');
     try {
         // URL of the external API to fetch popular movies
-        const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=5cd218ca6e4843789fa5bba7bf068e80';
+        const url = `https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=5cd218ca6e4843789fa5bba7bf068e80`;
 
         // Options for the fetch request, specifying the method and headers
         const options = {
