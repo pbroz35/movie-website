@@ -55,3 +55,26 @@ body {
 .popular-movies-text{
   color: white;
 }
+
+.popular-movies-text {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.movie-item {
+  flex: 0 0 calc(25% - 20px); /* Adjust the width as per your grid requirements */
+  margin: 10px;
+  text-align: center;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-title {
+  margin-top: 8px;
+}

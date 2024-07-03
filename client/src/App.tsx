@@ -15,7 +15,7 @@ function App() {
       <NavBar data = {data} setData = {setData}></NavBar>
 
     {/* Card Container */}
-      <CardContainer data = {data} ></CardContainer>
+     <CardContainer data = {data} ></CardContainer>
 
 
     </>
