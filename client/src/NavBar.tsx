@@ -34,7 +34,16 @@ const NavBar = ({ data, setData }) => {
         </li>
 
         <li>
-          <button className="button">Search</button>
+          <form>
+            <label htmlFor="searchInput"></label>
+            <input
+              type="text"
+              id="searchInput"
+              name="search"
+              placeholder="Enter movie title..."
+            />
+            <button type="submit">Search</button>
+          </form>
         </li>
       </ul>
     </nav>
