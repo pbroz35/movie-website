@@ -10,12 +10,11 @@ const NavBar = ({data, setData}) => {
     fetch(`${apiServer}/get-top-movies`).then((res) => res.json()).then((data) => {
       console.log("Value", data);
 
+      setData(data.results);
+
     });
     
         
-
-
-
     }
     
     return (

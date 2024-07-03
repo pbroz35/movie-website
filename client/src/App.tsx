@@ -1,5 +1,6 @@
 import "./App.css";
 import NavBar from "./NavBar";
+import CardContainer from "./CardContainer";
 import { useState } from "react";
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
     <>
     {/* Navigation bar */}
       <NavBar data = {data} setData = {setData}></NavBar>
+
+    {/* Card Container */}
+      <CardContainer data = {data} ></CardContainer>
+
 
     </>
   );
