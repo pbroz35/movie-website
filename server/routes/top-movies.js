@@ -1,14 +1,9 @@
-// Importing the Express framework
-import express from 'express';
-
-// Creating a new router instance
+const express = require("express");
 const router = express.Router();
+const path = require("path");
 
-// Importing the 'node-fetch' library for making HTTP requests
-import fetch from 'node-fetch'
-
-// Defining a GET route on the router
-router.get('/', async (req, res) => {
+router.get("/", async (req, res)=>{
+    
     try {
         // URL of the external API to fetch popular movies
         const url = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=5cd218ca6e4843789fa5bba7bf068e80';
@@ -30,6 +25,8 @@ router.get('/', async (req, res) => {
         // Checking if the response is successful
         if(response.ok){
             // Sending the fetched data as the response in JSON format
+
+           // console.log((data));
             res.json(data);
         }
         else {
@@ -39,11 +36,14 @@ router.get('/', async (req, res) => {
             res.status(response.status).json({ msg: "Error, failed to fetch movies" });
         }
     } 
+
     catch(error) {
         // Sending a 500 Internal Server Error response in case of any exceptions
         res.status(500).json({ error: 'Internal server error' });
     }
+
 })
 
-// Exporting the router to be used in other parts of the application
-export default router;
+
+//export the router
+module.exports = router;
