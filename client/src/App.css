@@ -5,7 +5,45 @@
 
 body {
   margin: 0;
-  background-color: black;
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(101, 100, 100) 58%, rgb(1, 1, 1) 100%)
+}
+
+
+.button{
+  border-radius: 15%;
+
+}
+
+.popular-movies-text{
+  color: white;
+}
+
+.popular-movies-text {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.movie-item {
+  flex: 0 0 calc(25% - 20px); /* Adjust the width as per your grid requirements */
+  margin: 10px;
+  text-align: center;
+}
+
+
+.movie-title {
+  margin-top: 8px;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-image:hover {
+  outline: 2px solid white; /* Outline turns white on hover */
 }
 
 .nav {
@@ -45,36 +83,4 @@ body {
 
 .nav li:hover {
   background-color: #777;
-}
-
-.button{
-  border-radius: 15%;
-
-}
-
-.popular-movies-text{
-  color: white;
-}
-
-.popular-movies-text {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
-}
-
-.movie-item {
-  flex: 0 0 calc(25% - 20px); /* Adjust the width as per your grid requirements */
-  margin: 10px;
-  text-align: center;
-}
-
-.movie-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.movie-title {
-  margin-top: 8px;
 }
