@@ -21,13 +21,27 @@ const NavBar = ({ data, setData, search, setSearch }) => {
     console.log("set search");
   };
 
+
+  
   const fetchSearch = () => {
+    console.log("Getting results for:", search);
 
-    console.log("Getting results for :", search);
+    const apiServer = "http://localhost:3500";
 
-    
+    fetch(`${apiServer}/get-search?query=${search}`)
+        .then((res) => res.json())
+        .then((data) => {
+            console.log("Value", data);
 
-  }
+            setData(data.results);
+
+            console.log("Fetched search from server.");
+        })
+        .catch((error) => {
+            console.error("Error fetching data", error);
+        });
+};
+
 
   return (
     <nav className="nav">
