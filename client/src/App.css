@@ -5,7 +5,8 @@
 
 body {
   margin: 0;
-  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(101, 100, 100) 58%, rgb(1, 1, 1) 100%)
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(101, 100, 100) 58%, rgb(1, 1, 1) 100%);
+
 }
 
 
@@ -43,7 +44,7 @@ body {
 }
 
 .movie-image:hover {
-  outline: 2px solid white; /* Outline turns white on hover */
+  outline: 2px solid rgb(255, 255, 255); /* Outline turns white on hover */
 }
 
 .nav {
@@ -82,5 +83,5 @@ body {
 }
 
 .nav li:hover {
-  background-color: #777;
+  background-color: #818181;
 }

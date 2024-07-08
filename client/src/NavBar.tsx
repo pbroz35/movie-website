@@ -1,8 +1,11 @@
 const NavBar = ({ data, setData }) => {
-  const fetchMovies = () => {
+  
+  
+    const fetchMovies = () => {
     console.log("Getting top movies");
 
     const apiServer = "http://localhost:3500";
+    
     fetch(`${apiServer}/get-top-movies`)
       .then((res) => res.json())
       .then((data) => {
