@@ -1,11 +1,11 @@
-const NavBar = ({ data, setData }) => {
-  
-  
-    const fetchMovies = () => {
+import { useState } from "react";
+
+const NavBar = ({ data, setData, search, setSearch }) => {
+  const fetchMovies = () => {
     console.log("Getting top movies");
 
     const apiServer = "http://localhost:3500";
-    
+
     fetch(`${apiServer}/get-top-movies`)
       .then((res) => res.json())
       .then((data) => {
@@ -14,6 +14,20 @@ const NavBar = ({ data, setData }) => {
         setData(data.results);
       });
   };
+
+  const updateSearch = (e) => {
+    
+    setSearch(e.target.value);
+    console.log("set search");
+  };
+
+  const fetchSearch = () => {
+
+    console.log("Getting results for :", search);
+
+    
+
+  }
 
   return (
     <nav className="nav">
@@ -37,7 +51,14 @@ const NavBar = ({ data, setData }) => {
         </li>
 
         <li>
-          <form>
+          <form
+            onChange={(e) => {
+              e.preventDefault();
+              updateSearch(e);
+            }}
+            
+            onSubmit={(e) => {e.preventDefault(); fetchSearch()}}
+          >
             <label htmlFor="searchInput"></label>
             <input
               type="text"

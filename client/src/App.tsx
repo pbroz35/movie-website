@@ -7,12 +7,12 @@ function App() {
 
   //typescript code here
   const [data, setData] = useState([]);
-
+  const [search, setSearch] = useState("");
 
   return (
     <>
     {/* Navigation bar */}
-      <NavBar data = {data} setData = {setData}></NavBar>
+      <NavBar data = {data} setData = {setData} search={search} setSearch={setSearch}></NavBar>
 
     {/* Card Container */}
      <CardContainer data = {data} ></CardContainer>
