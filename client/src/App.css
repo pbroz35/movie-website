@@ -18,6 +18,9 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
+  background-color: rgba(217, 217, 217, 0.336);
+  color: rgb(15, 15, 15);
+  font-weight: 700;
 }
 
 .movie-item {
@@ -38,7 +41,7 @@ body {
 }
 
 .movie-image:hover {
-  outline: 5px solid rgb(136, 11, 11); /* Outline turns white on hover */
+  outline: 5px solid rgb(229, 255, 0); /* Outline turns white on hover */
 }
 
 .nav {
