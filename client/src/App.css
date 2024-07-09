@@ -38,7 +38,7 @@ body {
 }
 
 .movie-image:hover {
-  outline: 2px solid rgb(255, 255, 255); /* Outline turns white on hover */
+  outline: 5px solid rgb(136, 11, 11); /* Outline turns white on hover */
 }
 
 .nav {

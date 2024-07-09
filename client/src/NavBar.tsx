@@ -74,7 +74,7 @@ const NavBar = ({ data, setData, search, setSearch }) => {
       <Box width={525}>
         <Stack spacing={3} direction={"row"} align={"center"} m={"0.5rem"}>
 
-          <Button colorScheme="blue" variant='outline' onClick={() => {
+          <Button colorScheme="gray" variant='outline' onClick={() => {
               if (data.length === 0) {
                 fetchMovies();
               } else {
@@ -82,7 +82,7 @@ const NavBar = ({ data, setData, search, setSearch }) => {
               }
             }}>Popular</Button>
 
-          <Button colorScheme="blue" variant='outline'>Trending</Button>
+          <Button colorScheme="gray" variant='outline'>Trending</Button>
 
           <SearchBar></SearchBar>
           
