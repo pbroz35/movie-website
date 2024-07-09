@@ -22,7 +22,6 @@ const NavBar = ({ data, setData, search, setSearch }) => {
   };
 
 
-  
   const fetchSearch = () => {
     console.log("Getting results for:", search);
 
@@ -46,7 +45,7 @@ const NavBar = ({ data, setData, search, setSearch }) => {
   return (
     <nav className="nav">
       <a href="/" className="site-title">
-        Best Movie Website
+        Movie Website
       </a>
       <ul>
         <li>

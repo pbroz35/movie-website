@@ -10,9 +10,6 @@ app.use(express.json());
 //cors - cross orgin resource sharing
  app.use(cors());
 
-// Routes
-// app.use('/', require('./routes/top-movies'));
-
 //router to private API server, which will fetch data
 app.use("/get-top-movies", require('./routes/top-movies'));
 
