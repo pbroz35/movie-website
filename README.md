@@ -30,5 +30,13 @@ This is a dynamic and interactive movie website where users can search for movie
 
 This project leverages the power of React for a responsive UI, Chakra UI for stylish and accessible design components, and ExpressJS with NodeJS for a robust backend to handle API requests efficiently.
 
-![Screenshot from 2024-07-11 13-43-41](https://github.com/user-attachments/assets/f08a2ac1-477d-4da6-b781-1d9eba97b8f1)
-![Screenshot from 2024-07-11 13-43-59](https://github.com/user-attachments/assets/95c9225f-06e6-470a-9a5d-f6c9c1bbab9b)
+- **Trending Movies**
+![Screenshot from 2024-07-11 14-13-08](https://github.com/user-attachments/assets/26043386-15e4-42ac-b52e-70c29c6c3d48)
+
+
+- **Getting a movie inquiry for 'Chicago'**
+![Screenshot from 2024-07-11 14-11-58](https://github.com/user-attachments/assets/f5e05edc-89be-42e4-8496-2115baf0a82f)
+
+
+- **Getting a summary:**
+![Screenshot from 2024-07-11 14-12-56](https://github.com/user-attachments/assets/ab48ee88-caae-4197-890a-ee16796adfd4)
