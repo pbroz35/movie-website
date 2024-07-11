@@ -42,12 +42,12 @@ const CardContainer = ({data}) => {
           </li>
         ))}
 
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>{movieTitle}</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>{movieSummary}
+          <ModalBody> <b>Summary: </b>{movieSummary}
           </ModalBody>
 
           <ModalFooter>

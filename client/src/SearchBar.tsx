@@ -7,6 +7,9 @@ import {
 } from "@chakra-ui/react";
 import { Search2Icon } from "@chakra-ui/icons";
 
+import { FaFilm } from "react-icons/fa6";
+
+
 export const SearchBar = ({ data, setData, search, setSearch }) => {
   const updateSearch = (e) => {
     setSearch(e.target.value);
@@ -34,12 +37,13 @@ export const SearchBar = ({ data, setData, search, setSearch }) => {
 
   return (
     <>
-      <InputGroup borderRadius={9} size="md" boxShadow='lg'>
+      <InputGroup borderRadius={9} size="md" boxShadow='lg' width={400}>
         <InputLeftElement
           pointerEvents="none"
           children={<Search2Icon color="gray.600" />}
         />
         <Input
+        
           type="text"
           placeholder="Find a movie..."
           border="1px solid #949494"

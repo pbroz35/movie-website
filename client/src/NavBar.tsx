@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { FaFilm } from "react-icons/fa6";
+import { GiFilmProjector } from "react-icons/gi";
+import { PiFilmSlate } from "react-icons/pi";
+import { PiFilmSlateBold } from "react-icons/pi";
 
 import { Button, Box, Flex, Stack, Image } from "@chakra-ui/react";
 import { SearchBar } from "./SearchBar";
@@ -17,8 +21,6 @@ const NavBar = ({ data, setData, search, setSearch }) => {
         setData(data.results);
       });
   };
-
-  
 
   return (
     <Box
@@ -44,9 +46,10 @@ const NavBar = ({ data, setData, search, setSearch }) => {
           />
         </Box>
 
-        <Box width={525}>
-          <Stack spacing={3} direction={"row"} align={"center"} m={"0.5rem"} >
+        <Box width={650}>
+          <Stack spacing={1.5} direction={"row"} align={"center"} m={"0.5rem"} >
             <Button
+            rightIcon={ <FaFilm />}
             boxShadow='lg'
             size="md"
               colorScheme="blue"
@@ -62,7 +65,7 @@ const NavBar = ({ data, setData, search, setSearch }) => {
               Popular
             </Button>
 
-            <Button size='md' colorScheme="blue" variant="solid" boxShadow='lg'>
+            <Button rightIcon={<PiFilmSlateBold></PiFilmSlateBold>} size='md' colorScheme="blue" variant="solid" boxShadow='lg'>
               Trending
             </Button>
 
