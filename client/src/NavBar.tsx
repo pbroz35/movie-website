@@ -1,6 +1,6 @@
 import { FaFilm } from "react-icons/fa6";
 import { PiFilmSlateBold } from "react-icons/pi";
-import { Button, Box, Flex, Stack, Image } from "@chakra-ui/react";
+import { Button, Box, Flex, Stack, Image, Heading } from "@chakra-ui/react";
 import { SearchBar } from "./SearchBar";
 import { useEffect } from "react";
 
@@ -51,25 +51,29 @@ const NavBar: React.FC<NavBarProps> = ({ data, setData, search, setSearch }) => 
   return (
     <Box
       pt={3}
-      pl={6}
+      pl={8}
       pr={6}
+      pb={3}
       maxW="bg"
       borderWidth="1.5px"
       borderRadius="xl"
       overflow="hidden"
     >
       <Flex align={"center"} justifyContent={"space-between"}>
+        
         <Box>
+          
           <Image
             padding={1}
             mt={-2}
-            ml={-1}
+            ml={2}
             mb={1.4}
             src="/new-icon.jpg"
             alt="icon"
-            boxSize="100px" // Optional: Set the size of the image container
+            boxSize="110px" // Optional: Set the size of the image container
             objectFit="cover"
           />
+          
         </Box>
 
         <Box width={650}>
