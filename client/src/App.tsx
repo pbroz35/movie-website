@@ -6,8 +6,9 @@ import { useState } from "react";
 function App() {
 
   //typescript code here
-  const [data, setData] = useState([]);
-  const [search, setSearch] = useState("");
+  const [data, setData] = useState<any[]>([]);
+  const [search, setSearch] = useState<string>("");
+
 
 
 

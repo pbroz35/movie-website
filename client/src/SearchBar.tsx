@@ -6,12 +6,22 @@ import {
   InputRightAddon,
 } from "@chakra-ui/react";
 import { Search2Icon } from "@chakra-ui/icons";
+import React from "react";
 
-import { FaFilm } from "react-icons/fa6";
+interface SearchBarProps {
+  data: any[];
+  setData: React.Dispatch<React.SetStateAction<any[]>>;
+  search: string;
+  setSearch: React.Dispatch<React.SetStateAction<string>>;
+}
 
-
-export const SearchBar = ({ data, setData, search, setSearch }) => {
-  const updateSearch = (e) => {
+export const SearchBar: React.FC<SearchBarProps> = ({
+  data,
+  setData,
+  search,
+  setSearch,
+}) => {
+  const updateSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
     console.log("set search");
   };
@@ -37,18 +47,17 @@ export const SearchBar = ({ data, setData, search, setSearch }) => {
 
   return (
     <>
-      <InputGroup borderRadius={9} size="md" boxShadow='lg' width={400}>
+      <InputGroup borderRadius={9} size="md" boxShadow="lg" width={400}>
         <InputLeftElement
           pointerEvents="none"
           children={<Search2Icon color="gray.600" />}
         />
         <Input
-        
           type="text"
           placeholder="Find a movie..."
           border="1px solid #949494"
-          onChange={(e) => updateSearch(e)}
-          onKeyDown={(e) => {
+          onChange={updateSearch}
+          onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {
             if (e.key === "Enter") {
               fetchSearch();
             }
@@ -57,11 +66,11 @@ export const SearchBar = ({ data, setData, search, setSearch }) => {
         <InputRightAddon p={0} border="none">
           <Button
             size="md"
-            colorScheme = 'blue'
+            colorScheme="blue"
             borderLeftRadius={0}
             borderRightRadius={3.3}
             border="1px solid #949494"
-            onClick={() => fetchSearch()}
+            onClick={fetchSearch}
           >
             Search
           </Button>
