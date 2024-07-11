@@ -45,6 +45,9 @@ export const SearchBar: React.FC<SearchBarProps> = ({
       });
   };
 
+
+  
+
   return (
     <>
       <InputGroup borderRadius={9} size="md" boxShadow="lg" width={400}>

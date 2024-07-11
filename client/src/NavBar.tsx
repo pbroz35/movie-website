@@ -2,6 +2,8 @@ import { FaFilm } from "react-icons/fa6";
 import { PiFilmSlateBold } from "react-icons/pi";
 import { Button, Box, Flex, Stack, Image } from "@chakra-ui/react";
 import { SearchBar } from "./SearchBar";
+import { useEffect } from "react";
+
 
 interface NavBarProps {
   data: any[];
@@ -38,6 +40,13 @@ const NavBar: React.FC<NavBarProps> = ({ data, setData, search, setSearch }) => 
         setData(data.results);
       });
   };
+
+  useEffect(()=>{
+
+    console.log("fetched trending movies using UseEffect()");
+    fetchTrending();
+  },[]);
+
 
   return (
     <Box
