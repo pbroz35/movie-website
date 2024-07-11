@@ -16,5 +16,7 @@ app.use("/get-top-movies", require('./routes/top-movies'));
 //router to private API server, which will fetch searches
 app.use("/get-search", require('./routes/search'));
 
+app.use("/trending", require('./routes/trending'))
+
 
 app.listen(PORT, ()=> console.log(`server is running on port ${PORT}`));
