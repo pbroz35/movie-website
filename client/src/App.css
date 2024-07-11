@@ -37,11 +37,12 @@ body {
 .movie-image {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.3);;
 }
 
 .movie-image:hover {
-  outline: 5px solid rgb(8, 45, 255); /* Outline turns white on hover */
+  outline: 5px solid #007BFF;
 }
 
 .nav {

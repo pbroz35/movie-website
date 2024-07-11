@@ -31,14 +31,6 @@ const CardContainer = ({data}) => {
     onOpen();
   };
   
-
-  const sayHello = (movieOver) =>
-  {
-    console.log("Hello");
-    console.log(movieOver);
-
-  }
-
   return (
     <ul className="popular-movies-text">
       {data

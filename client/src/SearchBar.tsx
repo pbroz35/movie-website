@@ -34,7 +34,7 @@ export const SearchBar = ({ data, setData, search, setSearch }) => {
 
   return (
     <>
-      <InputGroup borderRadius={9} size="sm" boxShadow='lg'>
+      <InputGroup borderRadius={9} size="md" boxShadow='lg'>
         <InputLeftElement
           pointerEvents="none"
           children={<Search2Icon color="gray.600" />}
@@ -52,7 +52,8 @@ export const SearchBar = ({ data, setData, search, setSearch }) => {
         />
         <InputRightAddon p={0} border="none">
           <Button
-            size="sm"
+            size="md"
+            colorScheme = 'blue'
             borderLeftRadius={0}
             borderRightRadius={3.3}
             border="1px solid #949494"
