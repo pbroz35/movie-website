@@ -45,8 +45,9 @@ const NavBar = ({ data, setData, search, setSearch }) => {
         </Box>
 
         <Box width={525}>
-          <Stack spacing={3} direction={"row"} align={"center"} m={"0.5rem"}>
+          <Stack spacing={3} direction={"row"} align={"center"} m={"0.5rem"} >
             <Button
+            boxShadow='lg'
               colorScheme="gray"
               variant="solid"
               onClick={() => {
@@ -60,7 +61,7 @@ const NavBar = ({ data, setData, search, setSearch }) => {
               Popular
             </Button>
 
-            <Button colorScheme="gray" variant="solid">
+            <Button colorScheme="gray" variant="solid" boxShadow='lg'>
               Trending
             </Button>
 

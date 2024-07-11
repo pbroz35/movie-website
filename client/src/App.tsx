@@ -9,6 +9,8 @@ function App() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
 
+
+
   return (
     <>
     {/* Navigation bar */}

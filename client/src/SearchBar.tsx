@@ -34,7 +34,7 @@ export const SearchBar = ({ data, setData, search, setSearch }) => {
 
   return (
     <>
-      <InputGroup borderRadius={9} size="sm">
+      <InputGroup borderRadius={9} size="sm" boxShadow='lg'>
         <InputLeftElement
           pointerEvents="none"
           children={<Search2Icon color="gray.600" />}
